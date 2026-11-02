@@ -1,0 +1,413 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #202936;
+}
+
+.dashboard-sidebar {
+  width: 235px;
+  flex-shrink: 0;
+  background: #20262f;
+  color: white;
+  padding: 22px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px 30px;
+}
+
+.dashboard-brand-icon {
+  font-size: 23px;
+  color: #df6944;
+}
+
+.dashboard-brand strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.dashboard-brand small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.dashboard-menu,
+.dashboard-sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-menu button,
+.dashboard-sidebar-footer button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px 15px;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  color: #aab1bc;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dashboard-menu button.active {
+  background: #df6944;
+  color: white;
+}
+
+.dashboard-menu button:hover:not(:disabled),
+.dashboard-sidebar-footer button:hover:not(:disabled) {
+  background: #34404d;
+  color: white;
+}
+
+.dashboard-menu button:disabled,
+.dashboard-sidebar-footer button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dashboard-sidebar-footer {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #36404c;
+}
+
+.dashboard-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-topbar {
+  height: 68px;
+  padding: 0 28px;
+  background: white;
+  border-bottom: 1px solid #eef0f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.dashboard-topbar input {
+  width: 320px;
+  max-width: 55%;
+  padding: 12px 15px;
+  background: #f5f6f8;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.dashboard-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #20262f;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}
+
+.dashboard-main {
+  padding: 30px 28px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 5px;
+  font-size: 25px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+.dashboard-fecha {
+  padding: 11px 15px;
+  background: white;
+  border: 1px solid #e3e7ed;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 118px;
+  padding: 18px 14px;
+  background: white;
+  border: 1px solid #e8ebef;
+  border-radius: 11px;
+}
+
+.stat-card p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  color: #667085;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 25px;
+  color: #202936;
+}
+
+.stat-card small {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.stat-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.stat-icon.verde,
+.stat-verde {
+  background: #e7f7ed;
+  color: #20a45c;
+}
+
+.stat-icon.naranja {
+  background: #fff0e9;
+  color: #df6944;
+}
+
+.stat-icon.amarillo,
+.stat-amarillo {
+  background: #fff6e4;
+  color: #d59616;
+}
+
+.stat-progress {
+  width: 100%;
+  height: 6px;
+  margin-top: 13px;
+  background: #f8e2da;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stat-progress span {
+  display: block;
+  height: 100%;
+  background: #df6944;
+  border-radius: inherit;
+}
+
+/* TABLA DE RESERVAS */
+
+.dashboard-table-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9edf2;
+  border-radius: 12px;
+}
+
+.dashboard-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dashboard-table-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.dashboard-table-header > span {
+  font-size: 12px;
+  color: #98a2b3;
+}
+
+.dashboard-table-scroll {
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 15px 9px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.dashboard-table th {
+  color: #667085;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.dashboard-table td {
+  font-size: 12px;
+}
+
+.sin-reservas {
+  text-align: center;
+  color: #98a2b3;
+  padding: 30px !important;
+}
+
+.estado-columna {
+  text-align: center;
+}
+
+.estado-semaforo {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.semaforo-verde {
+  background: #22c55e;
+}
+
+.semaforo-amarillo {
+  background: #facc15;
+}
+
+.semaforo-rojo {
+  background: #ef4444;
+}
+
+.dashboard-acciones {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-editar,
+.btn-cancelar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 9px;
+  background: white;
+  border: 1px solid #e1e6ec;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.btn-editar {
+  color: #667085;
+}
+
+.btn-cancelar {
+  color: #e34f54;
+  border-color: #ffd1d4;
+}
+
+.btn-editar:disabled,
+.btn-cancelar:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dashboard-volver {
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  color: #df6944;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+  }
+
+  .dashboard-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-sidebar-footer {
+    display: none;
+  }
+
+  .dashboard-main {
+    padding: 20px 12px;
+  }
+
+  .dashboard-topbar {
+    padding: 0 12px;
+  }
+
+  .dashboard-header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+}

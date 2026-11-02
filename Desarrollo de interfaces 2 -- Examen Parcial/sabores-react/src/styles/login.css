@@ -1,0 +1,328 @@
+.login-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+  font-family: Arial, sans-serif;
+  color: #202936;
+}
+
+.login-contenedor {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 610px;
+  display: grid;
+  grid-template-columns: 47% 53%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.login-imagen {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)),
+    url("/restaurante.avif") center / cover no-repeat;
+  color: #ffffff;
+  padding: 50px 42px;
+}
+
+.login-imagen-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-imagen-logo > span {
+  color: #df6944;
+  font-size: 30px;
+}
+
+.login-imagen-logo strong,
+.login-logo-principal strong {
+  display: block;
+  letter-spacing: 4px;
+  font-size: 17px;
+}
+
+.login-imagen-logo small,
+.login-logo-principal small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 3px;
+  margin-top: 6px;
+}
+
+.login-imagen-texto {
+  margin-top: 125px;
+}
+
+.login-imagen-texto h2 {
+  font-size: 27px;
+  line-height: 1.3;
+  margin: 0 0 14px;
+  color: #ffffff;
+}
+
+.login-imagen-texto p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #f0f0f0;
+}
+
+.login-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 50px;
+  background: #ffffff;
+}
+
+.login-panel-contenido {
+  width: 100%;
+  max-width: 460px;
+}
+
+.login-logo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.login-logo-icono {
+  color: #df6944;
+  font-size: 30px;
+}
+
+.login-logo-principal strong {
+  color: #202936;
+}
+
+.login-logo-principal small {
+  color: #98a2b3;
+}
+
+.login-titulos {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.login-titulos h1 {
+  color: #202936;
+  font-size: 22px;
+  margin: 0 0 13px;
+}
+
+.login-titulos p {
+  color: #98a2b3;
+  font-size: 11px;
+  margin: 0;
+}
+
+.login-campo {
+  margin-bottom: 18px;
+}
+
+.login-campo label {
+  display: block;
+  font-size: 11px;
+  color: #667085;
+  margin-bottom: 8px;
+}
+
+.login-input-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9fb;
+  border: 1px solid #dfe3ea;
+  border-radius: 9px;
+  height: 47px;
+  padding: 0 14px;
+}
+
+.login-input-contenedor:focus-within {
+  border-color: #df6944;
+  box-shadow: 0 0 0 2px rgba(223, 105, 68, 0.12);
+}
+
+.login-input-contenedor > span {
+  font-size: 15px;
+  color: #8792a2;
+}
+
+.login-input-contenedor input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #202936;
+  font-size: 12px;
+}
+
+.login-input-contenedor input::placeholder {
+  color: #a8b0bd;
+}
+
+.login-ver-password {
+  background: transparent;
+  border: none;
+  color: #8792a2;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.login-opciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 18px 0 22px;
+}
+
+.login-recordarme {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: #667085;
+  cursor: pointer;
+}
+
+.login-recordarme input {
+  accent-color: #df6944;
+  width: 15px;
+  height: 15px;
+}
+
+.login-texto-enlace {
+  background: transparent;
+  border: none;
+  color: #df6944;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.login-boton {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: linear-gradient(90deg, #df6944, #f47c3d);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.login-boton:hover {
+  filter: brightness(0.95);
+}
+
+.login-mensaje {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 7px;
+  background: #fff5e7;
+  color: #9a6016;
+  font-size: 12px;
+}
+
+.login-separador {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 23px 0;
+  color: #98a2b3;
+  font-size: 11px;
+}
+
+.login-separador::before,
+.login-separador::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e9edf2;
+}
+
+.login-crear {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  color: #202936;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-crear:hover {
+  background: #f8f9fb;
+}
+
+.login-volver {
+  display: block;
+  margin: 22px auto 0;
+  background: transparent;
+  border: none;
+  color: #df6944;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.login-demo {
+  display: block;
+  margin: 18px auto 0;
+  background: transparent;
+  border: 1px dashed #c7cdd6;
+  border-radius: 6px;
+  color: #667085;
+  padding: 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-contenedor {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    min-height: 0;
+  }
+
+  .login-imagen {
+    display: none;
+  }
+
+  .login-panel {
+    padding: 45px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 12px;
+  }
+
+  .login-panel {
+    padding: 35px 22px;
+  }
+
+  .login-opciones {
+    flex-wrap: wrap;
+  }
+}

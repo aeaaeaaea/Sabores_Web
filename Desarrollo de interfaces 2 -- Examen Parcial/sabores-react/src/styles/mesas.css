@@ -1,0 +1,94 @@
+/* DISPONIBILIDAD DE MESAS */
+
+.mesas-card h3 {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.plano-mesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 10px 15px;
+  padding: 16px;
+  background: #f4f3f1;
+  border: 1px solid #ecebe8;
+  border-radius: 9px;
+}
+
+.mesa-circulo {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.mesa-circulo.disponible {
+  background: #65bb89;
+  color: white;
+  border-color: #b5e0c4;
+}
+
+.mesa-circulo.ocupada {
+  background: #d1d5db;
+  color: #475467;
+  cursor: not-allowed;
+}
+
+.mesa-circulo.seleccionada {
+  background: #df6944;
+  border-color: #f8b59d;
+  color: white;
+}
+
+.mesa-circulo:not(:disabled):hover {
+  transform: scale(1.08);
+}
+
+.mesas-leyenda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0 0;
+}
+
+.mesas-leyenda span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #7b8494;
+}
+
+.punto {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.punto.disponible {
+  background: #65bb89;
+}
+
+.punto.ocupada {
+  background: #d1d5db;
+}
+
+.punto.seleccionada {
+  background: #df6944;
+}
+
+@media (max-width: 600px) {
+  .plano-mesas {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
